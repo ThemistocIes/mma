@@ -1,5 +1,6 @@
 rootProject.name = 'mma'
 include 'client-api'
 include 'worker'
+include 'miscellaneous:data'
 include 'miscellaneous:store'
 

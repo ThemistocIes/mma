@@ -3,6 +3,7 @@
  */
 dependencies {
     implementation project(':miscellaneous:store')
+    implementation project(':miscellaneous:data')
 }
 
 /**

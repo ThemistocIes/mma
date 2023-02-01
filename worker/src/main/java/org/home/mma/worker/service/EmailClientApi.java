@@ -1,4 +1,4 @@
-package org.home.mma.client.service;
+package org.home.mma.worker.service;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
