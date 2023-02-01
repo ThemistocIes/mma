@@ -1,2 +1,11 @@
-package org.home.mma.worker;public class ApplicationLauncher {
+package org.home.mma.worker;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ApplicationLauncher {
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationLauncher.class, args);
+    }
 }

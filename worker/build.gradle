@@ -1,19 +1,6 @@
-plugins {
-    id 'java'
-}
-
-group 'org.home'
-version 'unspecified'
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    annotationProcessor group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
 }

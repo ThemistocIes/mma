@@ -1,10 +1,10 @@
-package org.home.mma.client.store.dao;
+package org.home.mma.store.dao;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.home.mma.client.store.entities.SendEmailTaskEntity;
-import org.home.mma.client.store.repositories.SendEmailTaskRepository;
+import org.home.mma.store.entities.SendEmailTaskEntity;
+import org.home.mma.store.repositories.SendEmailTaskRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

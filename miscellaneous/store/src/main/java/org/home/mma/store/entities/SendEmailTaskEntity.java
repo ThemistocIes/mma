@@ -1,4 +1,4 @@
-package org.home.mma.client.store.entities;
+package org.home.mma.store.entities;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
