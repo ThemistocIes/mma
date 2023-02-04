@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/mma
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org.home: DEBUG
