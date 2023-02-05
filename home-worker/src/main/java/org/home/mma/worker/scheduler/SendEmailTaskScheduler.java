@@ -29,6 +29,8 @@ public class SendEmailTaskScheduler {
     @Scheduled(cron = "*/5 * * * * *")
     public void executeSendEmailTasks() {
 
+        log.debug("Worker has started execution of task");
+
         List<Long> sendEmailTaskIds = sendEmailTaskDao.findNotProcessedIds();
 
         for (Long sendEmailTaskId : sendEmailTaskIds) {
