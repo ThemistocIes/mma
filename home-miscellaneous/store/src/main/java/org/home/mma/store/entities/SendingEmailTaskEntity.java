@@ -3,6 +3,7 @@ package org.home.mma.store.entities;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
@@ -13,8 +14,8 @@ import java.util.Objects;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PROTECTED)
 @Entity
-@Table(name = "send_email_task")
-public class SendEmailTaskEntity {
+@Table(name = "sending_email_task")
+public class SendingEmailTaskEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -36,7 +37,7 @@ public class SendEmailTaskEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        SendEmailTaskEntity that = (SendEmailTaskEntity) o;
+        SendingEmailTaskEntity that = (SendingEmailTaskEntity) o;
         return Objects.equals(id, that.id);
     }
 

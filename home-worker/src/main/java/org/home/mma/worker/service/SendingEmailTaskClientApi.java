@@ -12,7 +12,7 @@ import java.util.Random;
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 @Component
-public class EmailClientApi {
+public class SendingEmailTaskClientApi {
 
     Random random = new Random();
 
@@ -27,6 +27,6 @@ public class EmailClientApi {
             return false;
         }
 
-        return random.nextInt(11) < 5;
+        return random.nextInt(7) < 5;
     }
 }

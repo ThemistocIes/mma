@@ -10,6 +10,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
 logging:
   level:
     org.home: DEBUG
